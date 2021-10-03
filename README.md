@@ -1,15 +1,3 @@
-
-
-
-
-
-
- 
-
-
-
-
-
 # Schema Comparator
 ## Validate your response against the json object structure
 Use this package if you need to validate the response in your API tests.
@@ -39,10 +27,10 @@ import { validateSchema } from 'schema-comparator';
 ```
 
 #### Params
-`obj`: Object to be validated. For the API testing pass the response body here.
-`schema`: Object or path to JSON schema. If path is passed as this argument, JSON file will be parsed by this path.
-`options`:  (Optional)  Additional rules for the validation.
-       `ignore`: Array of property names that will be ignored during validation.
+`obj`: Object to be validated. For the API testing pass the response body here.\
+`schema`: Object or path to JSON schema. If path is passed as this argument, JSON file will be parsed by this path.\
+`options`:  (Optional)  Additional rules for the validation.\
+       `ignore`: Array of property names that will be ignored during validation.\
 
 ### Examples
 Schema file
