@@ -1,0 +1,28 @@
+{
+  "name": "schema-comparator",
+  "version": "0.0.1",
+  "description": "Validate your response against the json object structure.",
+  "main": "src/validate.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarasAutomation/schema-comparator.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "validation",
+    "jest"
+  ],
+  "author": "Taras Tester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TarasAutomation/schema-comparator/issues"
+  },
+  "homepage": "https://github.com/TarasAutomation/schema-comparator#readme",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
