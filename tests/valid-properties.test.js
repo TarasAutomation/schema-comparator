@@ -1,26 +1,14 @@
+const inlineObjectData = require("./data/inline-object");
+const inlineArrayData = require("./data/inline-array");
 const validateSchema = require('../src/validate');
 
-
-it('Validate simple object', () => {
-    const obj = {
-        name: "Simple Name"
-    };
-    const schema = {
-        name: 'Any name'
-    }
+it.each(inlineObjectData())('Validate object - inline object', data => {
+    const { obj, schema } = data;
     validateSchema(obj, schema);
 })
 
-it('Validate object - no inline', () => {
-    const obj = {
-        name: "Simple Name",
-        weight: 50,
-        human: true
-    };
-    const schema = {
-        name: 'Any name',
-        weight: 0,
-        human: false
-    }
+it.each(inlineArrayData())('Validate object - inline array', data => {
+    const { obj, schema } = data;
     validateSchema(obj, schema);
-})
+});
+
