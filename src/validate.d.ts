@@ -5,5 +5,5 @@ export default function validateSchema <T extends Object>(
 ):void;
 
 type ValidationOptions = {
-    ignoreProperties: string[]
+    ignore: string[]
 }

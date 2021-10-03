@@ -16,7 +16,7 @@ const validateSchema = (obj, schema, options) => {
 const verifyProperties = (obj, schema, options) => {
     const missingProperties = [];
     for(let property in schema) {
-        if(options?.ignoreProperties?.find(p => p === property))
+        if(options?.ignore?.find(p => p === property))
             continue
         if(obj?.[property] instanceof Object) {
             if (obj?.[property] instanceof Array)
