@@ -1,4 +1,5 @@
 const fs = require('fs');
+const assert = require('assert');
 
 const validateSchema = (obj, schema, options) => {
     if (typeof obj !== 'object' || obj === null){
@@ -25,7 +26,7 @@ const verifyProperties = (obj, schema, options) => {
             continue
         }
         try {
-            expect(obj.hasOwnProperty(property)).toBeTruthy();
+            assert(obj.hasOwnProperty(property));
         } catch (e) {
             missingProperties.push(property);
         }

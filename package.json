@@ -1,6 +1,6 @@
 {
   "name": "schema-comparator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Validate your response against the json object structure.",
   "main": "src/validate.js",
   "scripts": {
